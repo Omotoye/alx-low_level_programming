@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- * Description: use puts() to print to standard output
- * Author: Omotoye Shamsudeen Adekoya
  * main - Entry point
- *
+ * Description: use puts() to print to standard output
  * Return: Always 0 (Sucess)
+ * Author: Omotoye Shamsudeen Adekoya
  */
 
 int main(void)
