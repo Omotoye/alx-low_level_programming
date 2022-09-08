@@ -11,7 +11,7 @@
 int main(void) 
 {
 	/* String Initialization */
-	char message[] = "Programming is like building a multilingual puzzle";
+	char message[] = "\"Programming is like building a multilingual puzzle";
 	
 	/* Writing the string to stdout */
 	puts(message); 
