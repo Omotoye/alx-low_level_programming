@@ -10,9 +10,11 @@
 
 int main(void) 
 {
-	// String Initialization
+	/* String Initialization */
 	char message[] = "Programming is like building a multilingual puzzle";
-	puts(message); // writing the string to stdout 
+	
+	/* Writing the string to stdout */
+	puts(message); 
 
 	return 0; 
 }
