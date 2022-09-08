@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
+ * Description: use puts() to print to standard output
  * Author: Omotoye Shamsudeen Adekoya
- * Purpose: use puts() to print to standard output
  * main - Entry point
  *
  * Return: Always 0 (Sucess)
