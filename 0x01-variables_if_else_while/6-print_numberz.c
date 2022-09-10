@@ -11,12 +11,11 @@
 
 int main(void)
 {
-	char digit_numbers[11] = "0123456789";
 	int i;
 
 	for (i = 0; i < 10; i++)
 	{
-		putchar(digit_numbers[i]);
+		putchar((i + '0'));
 	}
 	putchar('\n');
 	return (0);
