@@ -12,7 +12,6 @@
 int main(void)
 {
 	char single_digits[] = "0123456789";
-	int i;
 
 	printf("%s\n", single_digits);
 	return (0);
