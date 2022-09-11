@@ -13,30 +13,22 @@ int main(void)
 {
 	int i;
 	int j;
-	int skip_count = 1;
-	int level = 1;
 
 	for (i = 0; i < 10; i++)
 	{
 		for (j = 0; j < 10; j++)
 		{
-			if (skip_count == 0)
+			if (i < j)
 			{
 				putchar((i + '0'));
 				putchar((j + '0'));
-					if (level != 9)
-					{
-						putchar(',');
-						putchar(' ');
-					}
-			}
-			else
-			{
-				skip_count--;
+				if ((i != 8) || (j != 9))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
-		level++;
-		skip_count = level;
 	}
 	putchar('\n');
 	return (0);
