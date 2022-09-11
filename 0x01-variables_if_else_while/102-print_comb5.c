@@ -27,11 +27,11 @@ int main(void)
 				{
 					if (!((a == c && b == d) || (b == c && a == d)))
 					{
-						putchar((c + '0'));
-						putchar((d + '0'));
-						putchar(' ');
 						putchar((a + '0'));
 						putchar((b + '0'));
+						putchar(' ');
+						putchar((c + '0'));
+						putchar((d + '0'));
 					if (a != 9 || b != 9 || c != 9 || d != 8)
 					{
 						putchar(',');
