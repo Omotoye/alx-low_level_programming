@@ -45,4 +45,16 @@ void print_alphabet_x10(void);
  * @author Omotoye Shamsudeen Adekoya
  */
 int _islower(int c);
+
+/**
+ * _isalpha - checks for alphabets
+ * @c: (int) the character to be checked
+ *
+ * @brief A function to check a character if it is
+ *     an alphabet or not.
+ * Return: (int) 0 or 1 for true of false
+ * @file 4-isalpha.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+int _isalpha(int c);
 #endif /* MAIN_H */
