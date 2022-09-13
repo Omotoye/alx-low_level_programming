@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+void _putchar(char c);
+
 /**
  * print_alphabet - prints lowercase alphabet
  * @brief A function to print every alphabet in lowercase
