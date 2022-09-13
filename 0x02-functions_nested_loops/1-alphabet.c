@@ -1,17 +1,21 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main.h"
 
 /**
- * main - Entry point
- * Description: a program to print all the alphabet
- *     in lowercase
- * Return: Always 0 (Success)
- * Author: Omotoye Shamsudeen Adekoya
+ * print_alphabet - function
+ * @brief A function to print every alphabet in lowercase
+ * @file 1-alphabet.c
+ * @param void
+ * @return void
+ * @author Omotoye Shamsudeen Adekoya
  */
-
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char alphabet[27] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alphabet[i]);
+	}
+	putchar('\n');
 }
