@@ -97,8 +97,6 @@ int print_last_digit(int n);
 
 /**
  * jack_bauer - print every minute of the day
- * @n: (int) the integer to be processed
- *
  * @brief A function that prints every minute of the
  *     day of Jack Bauer, starting from 00:00 to 23:59
  * Return: (void)
@@ -106,4 +104,13 @@ int print_last_digit(int n);
  * @author Omotoye Shamsudeen Adekoya
  */
 void jack_bauer(void);
+
+/**
+ * times_table - prints the 9 times table
+ * @brief A function that prints the 9 times table
+ * Return: (void)
+ * @file 9-times_table.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void times_table(void)
 #endif /* MAIN_H */
