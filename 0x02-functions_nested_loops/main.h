@@ -125,4 +125,15 @@ void times_table(void);
  * @author Omotoye Shamsudeen Adekoya
  */
 int add(int num1, int num2);
+
+/**
+ * print_to_98 - prints natural number to 98
+ * @n: (int) the number to count from
+ * @brief A function that prints all natural numbers
+ *     from n to 98, followed by a new line.
+ * Return: (void)
+ * @file 11-print_to_98.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void print_to_98(int n)
 #endif /* MAIN_H */
