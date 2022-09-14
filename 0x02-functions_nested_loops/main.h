@@ -112,5 +112,5 @@ void jack_bauer(void);
  * @file 9-times_table.c
  * @author Omotoye Shamsudeen Adekoya
  */
-void times_table(void)
+void times_table(void);
 #endif /* MAIN_H */
