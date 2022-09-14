@@ -135,5 +135,5 @@ int add(int num1, int num2);
  * @file 11-print_to_98.c
  * @author Omotoye Shamsudeen Adekoya
  */
-void print_to_98(int n)
+void print_to_98(int n);
 #endif /* MAIN_H */
