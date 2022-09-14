@@ -94,4 +94,16 @@ int _abs(int n);
  * @author Omotoye Shamsudeen Adekoya
  */
 int print_last_digit(int n);
+
+/**
+ * jack_bauer - print every minute of the day
+ * @n: (int) the integer to be processed
+ *
+ * @brief A function that prints every minute of the
+ *     day of Jack Bauer, starting from 00:00 to 23:59
+ * Return: (void)
+ * @file 8-24_hours.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void jack_bauer(void);
 #endif /* MAIN_H */
