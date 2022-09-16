@@ -37,6 +37,6 @@ int _isupper(int c);
  * @file 1-isdigit.c
  * @author Omotoye Shamsudeen Adekoya
  */
-int _isdigit(int c)
+int _isdigit(int c);
 
 #endif /* MAIN_H */
