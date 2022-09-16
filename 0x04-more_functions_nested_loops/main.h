@@ -71,4 +71,14 @@ void print_numbers(void);
  */
 void print_most_numbers(void);
 
+/**
+ * more_numbers - print 0-14 ten times
+ * @brief A function that prints numbers from 0 - 14
+ *     10 times.
+ * Return: (void)
+ * @file 5-more_numbers.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void more_numbers(void);
+
 #endif /* MAIN_H */
