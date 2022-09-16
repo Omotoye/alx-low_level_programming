@@ -104,6 +104,6 @@ void print_line(int n);
  * @file 7-print_diagonal.c
  * @author Omotoye Shamsudeen Adekoya
  */
-void print_diagonal(int n)
+void print_diagonal(int n);
 
 #endif /* MAIN_H */
