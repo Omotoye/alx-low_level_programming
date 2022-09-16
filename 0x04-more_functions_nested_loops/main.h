@@ -69,6 +69,6 @@ void print_numbers(void);
  * @file 4-print_most_numbers.c
  * @author Omotoye Shamsudeen Adekoya
  */
-void print_most_numbers(void)
+void print_most_numbers(void);
 
 #endif /* MAIN_H */
