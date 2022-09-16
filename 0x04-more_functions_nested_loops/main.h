@@ -81,4 +81,16 @@ void print_most_numbers(void);
  */
 void more_numbers(void);
 
+/**
+ * print_line - print line
+ * @n: (int) the number of underscore (_) to be printed
+ *
+ * @brief A function that prints lines with _ symbol
+ *     based on the number n given to it as argument
+ * Return: (void)
+ * @file 6-print_line.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void print_line(int n);
+
 #endif /* MAIN_H */
