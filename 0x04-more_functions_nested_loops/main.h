@@ -118,4 +118,20 @@ void print_diagonal(int n);
  */
 void print_square(int size);
 
+/**
+ * fizz_buzz - Entry Point
+ * @brief The "Fizz-Buzz test" is an interview question designed to help
+ *     filter out the 99.5% of programming job candidates who can’t seem
+ *     to program their way out of a wet paper bag.This is program that prints
+ *     the numbers from 1 to 100, followed by a new line. But for multiples
+ *     of three it prints Fizz instead of the number and for the multiples
+ *     of five it prints Buzz. For numbers which are multiples of both
+ *     three and five it prints FizzBuzz.
+ * Return: (int)
+ * @file 9-fizz_buzz.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+
+void fizz_buzz(void);
+
 #endif /* MAIN_H */
