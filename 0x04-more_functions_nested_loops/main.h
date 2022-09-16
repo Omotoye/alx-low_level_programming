@@ -93,4 +93,17 @@ void more_numbers(void);
  */
 void print_line(int n);
 
+/**
+ * print_diagonal - print diagonal line
+ * @n: (int) the number of underscore (\) to be printed
+ *
+ * @brief A function that draws a diagonal line on the
+ *     terminal based on the number n given to it as
+ *         argument
+ * Return: (void)
+ * @file 7-print_diagonal.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void print_diagonal(int n)
+
 #endif /* MAIN_H */
