@@ -52,4 +52,13 @@ int _isdigit(int c);
  */
 int mul(int a, int b);
 
+/**
+ * print_numbers - print 0-9
+ * @brief A function that prints numbers from 0 - 9
+ * Return: (void)
+ * @file 3-print_numbers.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void print_numbers(void);
+
 #endif /* MAIN_H */
