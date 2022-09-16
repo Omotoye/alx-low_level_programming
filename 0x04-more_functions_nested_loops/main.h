@@ -116,6 +116,6 @@ void print_diagonal(int n);
  * @file 8-print_square.c
  * @author Omotoye Shamsudeen Adekoya
  */
-void print_square(int size)
+void print_square(int size);
 
 #endif /* MAIN_H */
