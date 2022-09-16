@@ -106,4 +106,16 @@ void print_line(int n);
  */
 void print_diagonal(int n);
 
+/**
+ * print_square - print square
+ * @size: (int) the size of the square
+ *
+ * @brief A function that prints a square on the
+ *     terminal based on the size given.
+ * Return: (void)
+ * @file 8-print_square.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void print_square(int size)
+
 #endif /* MAIN_H */

@@ -19,17 +19,17 @@ void print_diagonal(int n)
 
 	if (n <= 0)
 	{
-		putchar('\n');
+		_putchar('\n');
 	}
 
 	while (n > 0)
 	{
 		for (i = 0; i < space_count; i++)
 		{
-			putchar(' ');
+			_putchar(' ');
 		}
-		putchar('\\');
-		putchar('\n');
+		_putchar('\\');
+		_putchar('\n');
 		n--;
 		space_count++;
 	}
