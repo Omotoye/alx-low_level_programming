@@ -1,3 +1,6 @@
+#include "main.h"
+#include <stdio.h>
+
 /**
  * _isupper - checks for upper character
  * @c: (int) ASCII value of the character to be
