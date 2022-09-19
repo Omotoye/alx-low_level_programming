@@ -26,4 +26,16 @@ void reset_to_98(int *n);
  */
 void swap_int(int *a, int *b);
 
+/**
+ * _strlen - determine the length of a string
+ * @s: (char*) pointer to the string to be checked
+ *
+ * @brief A function that takes in a pointer to a string and
+ *     then determines and returns the lenth of the string.
+ * Return: (int) the length of the string.
+ * @file 2-strlen.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+int _strlen(char *s);
+
 #endif /* MAIN_H */
