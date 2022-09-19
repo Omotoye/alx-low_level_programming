@@ -13,7 +13,8 @@
  */
 void puts_half(char *str)
 {
-	int n = strlen(str) / 2;
+	int len = strlen(str);
+	int n = len - (len / 2);
 
 	str = str + n;
 
@@ -23,4 +24,13 @@ void puts_half(char *str)
 		str++;
 	}
 	putchar('\n');
+}
+
+int main(void)
+{
+    char *str;
+
+    str = "0123456789";
+    puts_half(str);
+    return (0);
 }
