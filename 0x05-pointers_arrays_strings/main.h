@@ -121,4 +121,16 @@ void print_array(int *a, int n);
  */
 char *_strcpy(char *dest, char *src);
 
+/**
+ * _atoi - convert string to integer
+ * @s: (char*) pointer to the string to be converted
+ *
+ * @brief A function that converts string to integer, taking into
+ *     account the preceding sign
+ * Return: (int) the integer extracted from the string
+ * @file 100-atoi.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+int _atoi(char *s);
+
 #endif /* MAIN_H */
