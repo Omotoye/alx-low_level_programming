@@ -13,20 +13,20 @@
  */
 int _atoi(char *s)
 {
-	char sign = '+';
+	int negative_sign_count = 0;
 	int count = 0;
 	int num = 0;
 	int found_num = 0;
 
 	while (*s != '\0')
 	{
+		/* check for the sign */
+		if (*(s) == 45)
+			negative_sign_count++;
+
 		if (*s > 47 && *s < 58)
 		{
 			found_num = 1;
-
-			/* check for the sign */
-			if (count > 0 && *(s - 1) == 45)
-				sign = '-';
 
 			num = (num * 10) + (*s - '0');
 		}
@@ -37,7 +37,7 @@ int _atoi(char *s)
 		count++;
 	}
 
-	if (sign == '-')
+	if (negative_sign_count % 2 == 1)
 		num *= -1;
 	return (num);
 }
