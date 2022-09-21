@@ -23,6 +23,7 @@ char *_strcat(char *dest, char *src)
 		{
 			start_cat = 1;
 			*_dest = *src;
+			src++;
 		}
 
 		else if (start_cat == 1)
