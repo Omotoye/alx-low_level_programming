@@ -29,4 +29,18 @@ char *_strcat(char *dest, char *src);
  */
 char *_strncat(char *dest, char *src, int n);
 
+/**
+ * _strncpy - copies string from one buffer to another
+ * @dest: (char*) pointer to the destination buffer
+ * @src: (char*) pointer to the source buffer.
+ * @n: (int) number of bytes to be copied from source
+ *
+ * @brief A function that copies a string from a source buffer to a
+ *     destination buffer and returns the pointer to the destination buffer
+ * Return: (char*) pointer to the destination buffer.
+ * @file 2-strncpy.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+char *_strncpy(char *dest, char *src, int n);
+
 #endif /* MAIN_H */
