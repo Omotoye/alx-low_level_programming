@@ -20,21 +20,15 @@ char *_strncpy(char *dest, char *src, int n)
 
 	if (n <= 0)
 	{
-		return (dest);
+		*_dest = '\0';
 	}
 
 	while (1)
 	{
 		*_dest = *src;
 		bytes_copied++;
-		if (*src == '\0')
+		if (*src == '\0' || bytes_copied == n)
 			break;
-		else if (bytes_copied == n)
-		{
-			_dest++;
-			*_dest = '\0';
-			break;
-		}
 		src++;
 		_dest++;
 	}
