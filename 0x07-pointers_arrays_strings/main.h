@@ -55,4 +55,17 @@ char *_memcpy(char *dest, char *src, unsigned int n);
  */
 char *_strchr(char *s, char c);
 
+/**
+ * _strspn - Gets the length of a prefix substring
+ * @s: (char*) pointer to a string
+ * @accept: (char*) accepted character.
+ *
+ * @brief A function that returns the number of bytes in the initial
+ *     segment of s which consist only of bytes from accept
+ * Return: (char*) length of prefix substring
+ * @file 3-strspn.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+unsigned int _strspn(char *s, char *accept);
+
 #endif /* MAIN_H */
