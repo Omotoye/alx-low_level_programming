@@ -27,5 +27,18 @@ void _putchar(char c);
  */
 char *_memset(char *s, char b, unsigned int n);
 
+/**
+ * _memcpy - copies memory area
+ * @dest: (char*) pointer to destination buffer
+ * @src: (char*) pointer to the source buffer
+ * @n: (int) the number of bytes of the memory to be copied
+ *
+ * @brief A function that copies n bytes from memory area src
+ *     to memory area dest
+ * Return: (char*) pointer to the destination buffer
+ * @file 0-memcpy.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+char *_memcpy(char *dest, char *src, unsigned int n);
 
 #endif /* MAIN_H */
