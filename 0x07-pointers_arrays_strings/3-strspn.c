@@ -16,21 +16,19 @@ unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int byte_count = 0;
 	unsigned int byte_found = 0;
-	int i = 0;
-	int j;
+	int i;
 
-	while (*(s + i) != '\0')
+	while (*s != '\0')
 	{
-		s = s + i;
-		j = 0;
-		while (*(accept + j) != '\0')
+		i = 0;
+		while (*(accept + i) != '\0')
 		{
-			if (*s == *(accept + j))
+			if (*s == *(accept + i))
 			{
-				byte_found = 1;
+				byte_found++;
 				break;
 			}
-			j++;
+			i++;
 		}
 
 		if (byte_found)
@@ -38,7 +36,11 @@ unsigned int _strspn(char *s, char *accept)
 			byte_count++;
 			byte_found--;
 		}
-		i++;
+		else
+		{
+			break;
+		}
+		s++;
 	}
 	return (byte_count);
 }
