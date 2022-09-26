@@ -96,4 +96,15 @@ char *_strpbrk(char *s, char *accept);
  */
 char *_strstr(char *haystack, char *needle);
 
+/**
+ * print_chessboard - prints the chessboard
+ * @a: (char (*)[8]) pointer to a 2d array
+ *
+ * @brief A function that uses a 2d array to print a chessboard
+ * Return: (void))
+ * @file 7-print_chessboard.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void print_chessboard(char (*a)[8]);
+
 #endif /* MAIN_H */
