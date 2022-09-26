@@ -68,4 +68,18 @@ char *_strchr(char *s, char c);
  */
 unsigned int _strspn(char *s, char *accept);
 
+/**
+ * _strpbrk - Searches a string for any of a set of bytes
+ * @s: (char*) pointer to a string
+ * @accept: (char*) set of accepted character.
+ *
+ * @brief A function that locates the first occurence in the string s
+ *     of any of the bytes in the string accept.
+ * Return: (char*) a pointer to the byte in s that matches one of the
+ *     bytes in accept, or NULL if no such byte is found
+ * @file 4-strpbrk.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+char *_strpbrk(char *s, char *accept);
+
 #endif /* MAIN_H */
