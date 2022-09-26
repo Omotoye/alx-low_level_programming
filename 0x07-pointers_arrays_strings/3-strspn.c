@@ -13,19 +13,7 @@
  * @file 2-strchr.c
  * @author Omotoye Shamsudeen Adekoya
  */
-char *_strchr(char *s, char c)
+unsigned int _strspn(char *s, char *accept)
 {
-	while ((*s != c) && (*s != '\0') && (s != NULL))
-	{
-		s++;
-	}
-
-	if (*s == c)
-	{
-		return (s);
-	}
-	else
-	{
-		return (NULL);
-	}
+    count 
 }
