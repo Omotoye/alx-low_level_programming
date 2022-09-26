@@ -82,4 +82,18 @@ unsigned int _strspn(char *s, char *accept);
  */
 char *_strpbrk(char *s, char *accept);
 
+/**
+ * _strstr - isolates a substring
+ * @haystack: (char*) pointer to a string
+ * @needle: (char*) pointer to substring
+ *
+ * @brief A function that finds the first occurrence of the substring
+ *     needle in the string haystack.
+ * Return: (char*) a pointer to the beginning of the located substring,
+ *     or NULL if the substring is not found.
+ * @file 5-strstr.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+char *_strstr(char *haystack, char *needle);
+
 #endif /* MAIN_H */
