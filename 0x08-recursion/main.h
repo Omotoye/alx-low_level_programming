@@ -49,4 +49,16 @@ void _print_rev_recursion(char *s);
  */
 int _strlen_recursion(char *s);
 
+/**
+ * factorial - compute factorial
+ * @n: (int) the number to compute the factorial for
+ *
+ * @brief A function that computes the factorial of a
+ *     given number
+ * Return: (int) the length of the given string
+ * @file 3-factorial.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+int factorial(int n);
+
 #endif /* MAIN_H */
