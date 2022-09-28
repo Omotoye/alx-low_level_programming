@@ -8,7 +8,7 @@
  * @brief A function that prints a string in reverse
  *     with a recursive function
  * Return: (void)
- * @file 0_print_rev_recursion.c
+ * @file 1_print_rev_recursion.c
  * @author Omotoye Shamsudeen Adekoya
  */
 void _print_rev_recursion(char *s)
