@@ -6,7 +6,7 @@
  * @argv: (char**) an array of pointer to the command line argument
  *
  * Return: Always 0 for SUCCESS
- * @file 0-whatsmyname.c
+ * @file 1-args.c
  * @author Omotoye Shamsudeen Adekoya
  */
 int main(int argc, __attribute__((unused)) char **argv)
