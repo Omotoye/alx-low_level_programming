@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 
 		while (*((*argv + j) + i) != '\0')
 		{
-			if ((*((*argv + j) + i) > 47) && (*((*argv + j) + i) < 58))
+			if (!((*((*argv + j) + i) > 47) && (*((*argv + j) + i) < 58)))
 			{
 				printf("Error\n");
 				return (1);
