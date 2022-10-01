@@ -29,8 +29,8 @@ int main(int argc, char **argv)
 	{
 		if (!((*(*(argv + 1) + i) > 47) && (*(*(argv + 1) + i) < 58)))
 		{
-			printf("Error\n");
-			return (1);
+			printf("%d\n", 0);
+			return (0);
 		}
 		i++;
 	}
