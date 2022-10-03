@@ -27,4 +27,16 @@ void _putchar(char c);
  */
 char *create_array(unsigned int size, char c);
 
+/**
+ * _strdup - create a duplicate buffer of a string
+ * @str: (char*) a pointer to the source string
+ *
+ * @brief A function that returns a ponter to a new string which
+ *     is a duplicate of the string str.
+ * Return: (char*) pointer to the new duplicated string
+ * @file 1-strdup.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+char *_strdup(char *str);
+
 #endif /* MAIN_H */
