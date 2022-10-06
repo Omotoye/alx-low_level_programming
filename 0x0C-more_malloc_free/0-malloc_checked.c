@@ -11,7 +11,7 @@
  */
 void *malloc_checked(unsigned int b)
 {
-	void *mem_alloc = malloc(sizeof(b));
+	void *mem_alloc = malloc(b);
 
 	if (mem_alloc == NULL)
 		exit(98);
