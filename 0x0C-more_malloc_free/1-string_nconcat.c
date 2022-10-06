@@ -32,9 +32,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 
 	/* Allocate the requred memory for the appended string */
-	size = (n <= s2_len) ? s1_len + n + 1 : s1_len + s2_len + 1;
+	size = (n <= s2_len) ? s1_len + n : s1_len + s2_len;
 
-	s1_append_s2 = malloc(sizeof(char) * size);
+	s1_append_s2 = malloc(sizeof(char) * (size + 1));
 	if (s1_append_s2 == NULL)
 	{
 		return (NULL);
