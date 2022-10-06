@@ -20,18 +20,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *s1_append_s2;
 
 	/* Get the length of string s1 */
-	while ((*(s1 + s1_len) != '\0'))
+	while ((s1 != NULL) && (*(s1 + s1_len) != '\0'))
 	{
-		if (s1 == NULL)
-			break;
 		s1_len++;
 	}
 
 	/* Get the length of string s2 */
-	while ((*(s2 + s2_len) != '\0'))
+	while ((s2 != NULL) && (*(s2 + s2_len) != '\0'))
 	{
-		if (s2 == NULL)
-			break;
 		s2_len++;
 	}
 
