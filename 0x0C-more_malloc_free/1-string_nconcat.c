@@ -22,24 +22,26 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	/* Get the length of string s1 */
 	while ((*(s1 + s1_len) != '\0'))
 	{
+		if (s1 == NULL)
+			break;
 		s1_len++;
 	}
 
 	/* Get the length of string s2 */
 	while ((*(s2 + s2_len) != '\0'))
 	{
+		if (s2 == NULL)
+			break;
 		s2_len++;
 	}
 
 	/* Allocate the requred memory for the appended string */
 	size = (n <= s2_len) ? s1_len + n : s1_len + s2_len;
-
 	s1_append_s2 = malloc(sizeof(char) * (size + 1));
 	if (s1_append_s2 == NULL)
 	{
 		return (NULL);
 	}
-
 	for (i = 0; i < size; i++)
 	{
 		if (i < s1_len)
