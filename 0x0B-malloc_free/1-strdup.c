@@ -13,7 +13,7 @@
 char *_strdup(char *str)
 {
 	/* Check if str is not NULL */
-	if (str && *str != '\0')
+	if (str)
 	{
 
 		int size = 0;
@@ -26,15 +26,14 @@ char *_strdup(char *str)
 		}
 
 		/* Initialze a buffer with the source string size */
-		if (size > 0)
-			duplicate = (char *)malloc((size + 1) * sizeof(char));
+		duplicate = (char *)malloc((size + 1) * sizeof(char));
 
 		/* Duplicate the source string into the destination buffer */
 		if (duplicate)
 		{
 			int i;
 
-			for (i = 0; i < size; i++)
+			for (i = 0; i < size + 1; i++)
 			{
 				*(duplicate + i) = *(str + i);
 			}
