@@ -22,9 +22,9 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	array_mem = malloc(nmemb * size);
 	if (array_mem)
 	{
-		for (i = 0; i < size; i++)
+		for (i = 0; i < nmemb; i++)
 		{
-			*((int *)array_mem + (i * nmemb)) = 0;
+			*(array_mem + (i * size)) = 0;
 		}
 	}
 	else

@@ -40,16 +40,17 @@ void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);
 
 /**
- * _calloc - allocates memory for an array
- * @nmemb: size of array item
- * @size: size of array
+ * array_range - creates an array of integer
+ * @min: (int) min value of the range array
+ * @max: (int) max value of the range array
  *
- * @brief A function that allocates memory for an array of nmemb
- * elements of size bytes each
- * Return: (void*) pointer to the allocated memory
- * @file 2-calloc.c
+ * @brief A function that creates an array of integer that contains
+ *     all the values from min (included) to max (included) ordered
+ *         from min to max
+ * Return: (int*) pointer to the array of integer
+ * @file 3-array_range.c
  * @author Omotoye Shamsudeen Adekoya
  */
-void *_calloc(unsigned int nmemb, unsigned int size);
+int *array_range(int min, int max);
 
 #endif /* MAIN_H */
