@@ -20,6 +20,11 @@ struct dog
 };
 
 /**
+ * dog_t - a typedef that stores the information of a dog
+ */
+typedef struct dog dog_t;
+
+/**
  * init_dog - Initialize struct dog
  * @d: (struct dog) a ponter to a struct dog variable
  * @name: (char*) the name of the dog
