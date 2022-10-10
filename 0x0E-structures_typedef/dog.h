@@ -77,5 +77,16 @@ dog_t *new_dog(char *name, float age, char *owner);
  * @author Omotoye Shamsudeen Adekoya
  */
 char *_strcpy(char *dest, char *src);
+/**
+ * _strlen - determine the length of a string
+ * @s: (char*) pointer to the string to be checked
+ *
+ * @brief A function that takes in a pointer to a string and
+ *     then determines and returns the lenth of the string.
+ * Return: (int) the length of the string.
+ * @file 2-strlen.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+int _strlen(char *s);
 
 #endif /* DOG_H */

@@ -15,8 +15,8 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *dog;
-	char name_cpy[200];
-	char owner_cpy[200];
+	char *name_cpy = malloc(sizeof(char) * _strlen(name));
+	char *owner_cpy = malloc(sizeof(char) * _strlen(owner));
 
 	dog = malloc(sizeof(dog_t));
 	if (dog)
@@ -30,6 +30,28 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
+}
+
+/**
+ * _strlen - determine the length of a string
+ * @s: (char*) pointer to the string to be checked
+ *
+ * @brief A function that takes in a pointer to a string and
+ *     then determines and returns the lenth of the string.
+ * Return: (int) the length of the string.
+ * @file 2-strlen.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (*s != '\0')
+	{
+		s++;
+		count++;
+	}
+	return (count);
 }
 
 /**
