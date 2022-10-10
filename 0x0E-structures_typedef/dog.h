@@ -51,4 +51,18 @@ void init_dog(struct dog *d, char *name, float age, char *owner);
  */
 void print_dog(struct dog *d);
 
+/**
+ * new_dog - Initialize type dog_t
+ * @name: (char*) the name of the dog
+ * @age: (flaot) the age of the dog
+ * @owner: (char*) the name of the owner of the dog
+ *
+ * Description: A function that initializes a variable of
+ *     type dog_t
+ * Return: (dog_t*) pointer to the new dog type
+ * @file 4-new_dog.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+dog_t *new_dog(char *name, float age, char *owner);
+
 #endif /* DOG_H */
