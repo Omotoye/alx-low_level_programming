@@ -13,25 +13,15 @@
  * @file 2-strncpy.c
  * @author Omotoye Shamsudeen Adekoya
  */
+
 char *_strncpy(char *dest, char *src, int n)
 {
-	int bytes_copied = 0;
-	char *_dest = dest;
+    int i;
 
-	if (n <= 0)
-	{
-		*_dest = '\0';
-		return (dest);
-	}
+    for (i = 0; i < n && src[i] != '\0'; i++)
+        dest[i] = src[i];
+    for (; i < n; i++)
+        dest[i] = '\0';
 
-	while (1)
-	{
-		*_dest = *src;
-		bytes_copied++;
-		if (*src == '\0' || bytes_copied == n)
-			break;
-		src++;
-		_dest++;
-	}
-	return (dest);
+    return dest;
 }
