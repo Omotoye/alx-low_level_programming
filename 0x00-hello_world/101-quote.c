@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -9,8 +11,6 @@
 
 int main(void)
 {
-	char mes[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-
-	fprintf(stderr, "%s", mes);
-	return (0);
+	dprintf(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
+	exit(EXIT_SUCCESS);
 }
