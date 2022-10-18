@@ -12,5 +12,5 @@
 int main(void)
 {
 	dprintf(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n");
-	exit(EXIT_SUCCESS);
+	exit(EXIT_FAILURE);
 }
