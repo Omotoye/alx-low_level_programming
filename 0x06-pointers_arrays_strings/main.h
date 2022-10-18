@@ -1,5 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
+#include <stdio.h>
 
 /**
  * _strcat - concatenate string from one buffer to another

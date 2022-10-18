@@ -17,6 +17,9 @@ int _strcmp(char *s1, char *s2)
 	int s1_char = 0;
 	int s2_char = 0;
 
+	if (s1 == NULL || s2 == NULL)
+		return (0);
+
 	while (!((*s1 == '\0' && *s2 == '\0')))
 
 	{
