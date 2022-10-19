@@ -2,6 +2,7 @@
 #define MAIN_H
 #include <stdarg.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * sum_them_all - sums all parameters
@@ -16,5 +17,33 @@
  * @author Omotoye Shamsudeen Adekoya
  */
 int sum_them_all(const unsigned int n, ...);
+
+/**
+ * _putchar - puts character in stdout
+ * @c: (char) the character to be printed
+ *
+ * @brief A function to put a character into the standard
+ *     output file.
+ * Return: (void)
+ * @file _putchar.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void _putchar(char c);
+
+/**
+ * print_numbers - print all integer parameters
+ * @separator: (char*) a string for separating the integers
+ *     be printed
+ * @n: (const unsigned int) the count of optional parameter
+ *     to be added
+ * @...: (const unsigned int) optional parameters
+ *
+ * @brief A function that prints numbers given as an optional
+ *     parameter followed by a newline.
+ * Return: (void)
+ * @file 1-print_numbers.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void print_numbers(const char *separator, const unsigned int n, ...);
 
 #endif /* MAIN_H */
