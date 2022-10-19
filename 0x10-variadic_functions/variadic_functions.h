@@ -35,7 +35,7 @@ void _putchar(char c);
  * @separator: (char*) a string for separating the integers
  *     be printed
  * @n: (const unsigned int) the count of optional parameter
- *     to be added
+ *     to be printed
  * @...: (const unsigned int) optional parameters
  *
  * @brief A function that prints numbers given as an optional
@@ -45,5 +45,21 @@ void _putchar(char c);
  * @author Omotoye Shamsudeen Adekoya
  */
 void print_numbers(const char *separator, const unsigned int n, ...);
+
+/**
+ * print_strings - print all string optional parameters
+ * @separator: (char*) a string for separating the strings
+ *     be printed
+ * @n: (const unsigned int) the count of optional parameter
+ *     to be printed
+ * @...: (const unsigned int) optional parameters
+ *
+ * @brief A function that prints string given as an optional
+ *     parameter followed by a newline.
+ * Return: (void)
+ * @file 2-print_strings.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void print_strings(const char *separator, const unsigned int n, ...);
 
 #endif /* MAIN_H */
