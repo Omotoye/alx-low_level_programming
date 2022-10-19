@@ -5,7 +5,7 @@
  * @separator: (char*) a string for separating the integers
  *     be printed
  * @n: (const unsigned int) the count of optional parameter
- *     to be added
+ *     to be printed
  * @...: (const unsigned int) optional parameters
  *
  * @brief A function that prints numbers given as an optional
