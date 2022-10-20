@@ -22,11 +22,13 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 
 	/* Getting the length of the string */
-	while (str[len] != '\0' && str != NULL)
+	if (str == NULL)
+		return (NULL);
+	while (str[len] != '\0')
 		len++;
 
 	new->str = malloc(sizeof(char) * (len + 1));
-	if (new->str == NULL || str == NULL)
+	if (new->str == NULL)
 		return (NULL);
 	new->str = strdup(str);
 	new->len = len;
