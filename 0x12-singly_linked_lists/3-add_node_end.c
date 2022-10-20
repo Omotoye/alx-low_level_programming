@@ -14,22 +14,14 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new;
-	list_t *tail;
+	list_t *new, *tail;
 	unsigned int len = 0;
 
-	if (str == NULL || head == NULL)
-		return (NULL);
-
 	new = malloc(sizeof(list_t));
-	if (new == NULL)
-		return (NULL);
 	tail = malloc(sizeof(list_t));
-	if (tail == NULL)
+	if (new == NULL || tail == NULL)
 		return (NULL);
-	tail = *head;
 
-	/* Getting the length of the string */
 	while (str[len] != '\0')
 		len++;
 
@@ -39,23 +31,14 @@ list_t *add_node_end(list_t **head, const char *str)
 	new->str = strdup(str);
 	new->len = len;
 	new->next = NULL;
-
-	while (1)
+	if (*head == NULL)
 	{
-		if (tail != NULL)
-		{
-			if (tail->next == NULL)
-			{
-				tail->next = new;
-				break;
-			}
-			tail = tail->next;
-		}
-		else
-		{
-			*head = new;
-			break;
-		}
+		*head = new;
+		return (new);
 	}
+	tail = *head;
+	while (tail->next)
+		tail = tail->next;
+	tail->next = new;
 	return (new);
 }
