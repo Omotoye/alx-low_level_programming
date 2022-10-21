@@ -95,4 +95,15 @@ list_t *add_node_end(list_t **head, const char *str);
  */
 void free_list(list_t *head);
 
+/**
+ * print_before_main - prints before main
+ *
+ * @brief A function prints to stdout before the main function is
+ *     executed
+ * Return: (void)
+ * @file 100-first.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void print_before_main(void) __attribute__((constructor));
+
 #endif /* LISTS_H */
