@@ -9,7 +9,8 @@
  * @file 100-first.c
  * @author Omotoye Shamsudeen Adekoya
  */
-void print_before_main (void)
+void print_before_main(void)
 {
-	printf("You're beat! and yet, you must allow,\nI bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow,\n");
+	printf("I bore my house upon my back!\n");
 }
