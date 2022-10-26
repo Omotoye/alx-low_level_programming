@@ -69,4 +69,18 @@ size_t print_listint(const listint_t *h);
  */
 size_t listint_len(const listint_t *h);
 
+/**
+ * add_nodeint - adds a node to a linked list
+ * @head: (listint_t **) a pointer to the pointer to the
+ *     head of the linked list
+ * @n: (int) the number to be added to the new node
+ *
+ * @brief A function that adds a new node to the beginning of
+ *     a `listint_t` list
+ * Return: (listint_t) a pointer to the new node created
+ * @file 2-add_nodeint.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+listint_t *add_nodeint(listint_t **head, const int n);
+
 #endif /* LISTS_H */
