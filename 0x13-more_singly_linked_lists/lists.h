@@ -97,4 +97,16 @@ listint_t *add_nodeint(listint_t **head, const int n);
  */
 listint_t *add_nodeint_end(listint_t **head, const int n);
 
+/**
+ * free_listint - frees a `listint_t` list
+ * @head: (listint_t *) a pointer to the `listint_t` list
+ *
+ * @brief A function that frees up the memory alloated for a
+ *     `listint_t` list
+ * Return: (void)
+ * @file 4-free_listint.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+void free_listint(listint_t *head);
+
 #endif /* LISTS_H */
