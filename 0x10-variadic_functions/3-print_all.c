@@ -14,23 +14,23 @@
  * @file 2-print_strings.c
  * @author Omotoye Shamsudeen Adekoya
  */
-void print_all(const char * const format, ...)
+void print_all(const char *const format, ...)
 {
-	unsigned int i;
-	char *str;
+	unsigned int len = 0;
 	va_list params;
+	int t, y;
 
-	va_start(params, n);
-	for (i = 0; i < n; i++)
-	{
-		str = va_arg(params, char *);
-		if (str)
-			printf("%s", str);
-		else
-			printf("(nil)");
-		if (separator && i != n - 1)
-			printf("%s", separator);
-	}
+	va_start(params, format);
+
+	while (format[len] != '\0')
+		if (format[len] == 'c' ||
+			format[len] == 'i' ||
+			format[len] == 'f' ||
+			format[len] == 's')
+		{
+			va_arg(params, char *);
+		}
+
 	va_end(params);
 	putchar('\n');
 }
