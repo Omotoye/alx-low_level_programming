@@ -68,4 +68,17 @@ int set_bit(unsigned long int *n, unsigned int index);
  */
 int clear_bit(unsigned long int *n, unsigned int index);
 
+/**
+ * flip_bits - returns number of bits to flip to get a num
+ * @n: (unsigned long int) first number to check for flip
+ * @m: (unsigned long int) second number to check for flip
+ *
+ * @brief A function that returns the number of bits that would
+ *     need to be flipped to get from one number to another
+ * Return: (unsigned int) number of bits to flip
+ * @file 5-flip_bit.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+unsigned int flip_bits(unsigned long int n, unsigned long int m);
+
 #endif /* MAIN_H*/
