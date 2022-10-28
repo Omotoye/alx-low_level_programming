@@ -47,12 +47,25 @@ int get_bit(unsigned long int n, unsigned int index);
  * @n: (unsigned long int) the number to set bit from
  * @index: (unsigned int) the index to set the bit at
  *
- * @brief A function that set the value of a bit to `1` at 
+ * @brief A function that set the value of a bit to `1` at
  *     a given index
- * Return: (int) 1 if successful -1 if not successful 
- * @file 3-set_bit.c 
+ * Return: (int) 1 if successful -1 if not successful
+ * @file 3-set_bit.c
  * @author Omotoye Shamsudeen Adekoya
  */
 int set_bit(unsigned long int *n, unsigned int index);
+
+/**
+ * clear_bit - clear bit at a given index
+ * @n: (unsigned long int) the number to clear bit from
+ * @index: (unsigned int) the index to clear the bit from
+ *
+ * @brief A function that sets the value of a bit to 0 at
+ *     a given index
+ * Return: (int) 1 of successful -1 if not successful
+ * @file 4-clear_bit.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+int clear_bit(unsigned long int *n, unsigned int index);
 
 #endif /* MAIN_H*/
