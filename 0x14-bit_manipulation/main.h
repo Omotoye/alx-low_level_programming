@@ -81,4 +81,15 @@ int clear_bit(unsigned long int *n, unsigned int index);
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m);
 
+/**
+ * get_endianness - Check the Endianess of a machine
+ *
+ * @brief A function that checks the endianess of the system
+ *     whether little or Big Endian
+ * Return: (int) 0 if big endian 1 if little endian
+ * @file 5-flip_bit.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+int get_endianness(void);
+
 #endif /* MAIN_H*/
