@@ -71,4 +71,17 @@ int _strcmp(char *s1, char *s2);
 
 void reverse_array(int *a, int n);
 
+/**
+ * string_toupper - changes all lowercase letters to uppercase
+ * @str: (char*) string to convert to all uppercase
+ *
+ * @brief A function that converts all lowercase characters contained
+ *     in a string into uppercase.
+ * Return: (char*) the given string after uppercase conversion
+ * @file 5-string_toupper.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+
+char *string_toupper(char *str);
+
 #endif /* MAIN_H */
