@@ -14,44 +14,20 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int s1_char = 0;
-	int s2_char = 0;
+	int diff = 0;
 
 	if (s1 == NULL || s2 == NULL)
 		return (0);
 
-	while (!((*s1 == '\0' && *s2 == '\0')))
-
+	while (*s1 != '\0' || *s2 != '\0')
 	{
-		if (*s1 != '\0')
-		{
-			s1_char += *s1;
-			s1++;
-		}
-		if (*s2 != '\0')
-		{
-			s2_char += *s2;
-			s2++;
-		}
-		if (*s1 != *s2)
+		diff = *s1 - *s2;
+		if (diff != 0)
 			break;
+		if (*s1 != '\0')
+			s1++;
+		if (*s2 != '\0')
+			s2++;
 	}
-	return (s1_char - s2_char);
-}
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    char s1[] = "Hello";
-    char s2[] = "World!";
-
-    printf("%d\n", _strcmp(s1, s2));
-    printf("%d\n", _strcmp(s2, s1));
-    printf("%d\n", _strcmp(s1, s1));
-	printf("%d\n", _strcmp("ABC", "AB"));
-    return (0);
+	return (diff);
 }
