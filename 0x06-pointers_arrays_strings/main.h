@@ -84,4 +84,16 @@ void reverse_array(int *a, int n);
 
 char *string_toupper(char *str);
 
+/**
+ * cap_string - capitalize the words of a string
+ * @str: (char*) string to be converted
+ *
+ * @brief A function that converts the first letters of every word in a
+ *     string into uppercase
+ * Return: (char*) the given string after capitalization
+ * @file 6-cap_string.c
+ * @author Omotoye Shamsudeen Adekoya
+ */
+
+char *cap_string(char *str);
 #endif /* MAIN_H */
